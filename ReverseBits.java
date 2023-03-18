@@ -1,6 +1,6 @@
 package LeetCode;
 //https://leetcode.com/problems/reverse-bits/
-public class ReverseBits {
+class ReverseBits {
     public static void main(String[] args) {
         int n = 0b00000010100101000001111010011100;
         System.out.println(reverseBits(n));

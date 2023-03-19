@@ -8,8 +8,7 @@ public class FindFirstAndLastPositionOfElementInSortedArray {
     public static void main(String[] args)
     {
         int[] nums = {1};
-        int target = 1;
-        System.out.println(Arrays.toString(searchRange(nums, target)));
+        System.out.println(Arrays.toString(searchRange(nums, 1)));
     }
 
     public static int[] searchRange(int[] nums, int target) {

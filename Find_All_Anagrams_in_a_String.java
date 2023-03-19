@@ -8,10 +8,11 @@ import java.util.List;
 public class Find_All_Anagrams_in_a_String {
     public static void main(String[] args) {
         System.out.println(findAnagrams("ababa", "ab"));
+//        System.out.println(findAnagrams2("ababa", "ab"));
     }
 
 //    Time limit Exceeded
-//    public static List<Integer> findAnagrams(String s, String p) {
+//    public static List<Integer> findAnagrams2(String s, String p) {
 //        List<Integer> list = new ArrayList<>();
 //        for (int i = 0; i < s.length() - p.length() + 1; i++) {
 //            if (anagram(s.substring(i, i+p.length()), p))
@@ -19,7 +20,7 @@ public class Find_All_Anagrams_in_a_String {
 //        }
 //        return list;
 //    }
-//
+
 //    public static boolean anagram ( String str1, String str2 ) {
 //        char[] strOne = str1.toCharArray ();
 //        char[] strTwo = str2.toCharArray ();

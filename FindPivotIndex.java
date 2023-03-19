@@ -9,7 +9,8 @@ public class FindPivotIndex {
         System.out.println(pivotIndex(nums));
     }
     public static int pivotIndex(int[] nums) {
-        int total = 0, leftSum = 0;
+        int total = 0;
+        int leftSum = 0;
         for (int x: nums)
             total += x;
         for (int i = 0; i < nums.length; ++i) {
@@ -18,6 +19,5 @@ public class FindPivotIndex {
             leftSum += nums[i];
         }
         return -1;
-
     }
 }

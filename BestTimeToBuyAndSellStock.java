@@ -1,25 +1,26 @@
 package LeetCode;
 //https://leetcode.com/problems/best-time-to-buy-and-sell-stock
 
-public class BestTimetoBuyandSellStock {
+public class BestTimeToBuyAndSellStock {
     public static void main(String[] args) {
         int[] prices = {2,3,1};
         System.out.println(maxProfit(prices));
+        System.out.println(maxProfit2(prices));
     }
 
 //    Time limit exceeded for big array
-//    public static int maxProfit(int[] prices) {
-//        int maxProfit = Integer.MIN_VALUE;
-//        for (int i = 0; i < prices.length; i++) {
-//            for (int j = i; j < prices.length; j++) {
-//                int diff = prices[j] - prices[i];
-//                if ( maxProfit < diff)
-//                    maxProfit = diff;
-//            }
-//
-//        }
-//        return maxProfit;
-//    }
+    public static int maxProfit2(int[] prices) {
+        int maxProfit = Integer.MIN_VALUE;
+        for (int i = 0; i < prices.length; i++) {
+            for (int j = i; j < prices.length; j++) {
+                int diff = prices[j] - prices[i];
+                if ( maxProfit < diff)
+                    maxProfit = diff;
+            }
+
+        }
+        return maxProfit;
+    }
 
     public static int maxProfit(int[] prices) {
         int sellValue = 0;

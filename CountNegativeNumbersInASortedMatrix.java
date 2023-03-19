@@ -1,6 +1,6 @@
 package LeetCode;//https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix
 
-public class CountNegativeNumbersinaSortedMatrix {
+public class CountNegativeNumbersInASortedMatrix {
     public static void main(String[] args)
     {
         int[][] grid1 = { {4,3,2,-1},{3,2,1,-1},{1,1,-1,-2},{-1,-1,-2,-3}  };

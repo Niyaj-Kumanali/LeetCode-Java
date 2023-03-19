@@ -1,7 +1,7 @@
 package LeetCode;
 //https://leetcode.com/problems/climbing-stairs
 
-public class Climbing_Stairs {
+public class ClimbingStairs {
     public static void main(String[] args) {
         System.out.println(climbStairs(3));
     }

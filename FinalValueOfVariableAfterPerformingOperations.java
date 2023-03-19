@@ -1,6 +1,6 @@
 package LeetCode;//https://leetcode.com/problems/final-value-of-variable-after-performing-operations/
 
-public class FinalValueofVariableAfterPerformingOperations {
+public class FinalValueOfVariableAfterPerformingOperations {
     public static void main(String[] args)
     {
         String[] operations = { "--X","X++","X++" };

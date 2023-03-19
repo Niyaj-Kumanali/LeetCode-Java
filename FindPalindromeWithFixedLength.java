@@ -18,10 +18,10 @@ public class FindPalindromeWithFixedLength {
             res[i] = queries[i]-1 < palindromes.size()?palindromes.get(queries[i]==0? queries[i]: queries[i]-1):-1;
         return res;
     }
-    public static ArrayList<Integer> palindrome(int srange, int erange)
+    public static ArrayList<Integer> palindrome(int start, int end)
     {
         ArrayList<Integer> list = new ArrayList<>();
-        for (int i=srange; i<erange; i++)
+        for (int i=start; i<end; i++)
             if ( i == reversed(i))
                 list.add(i);
         return list;

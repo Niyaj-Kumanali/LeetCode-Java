@@ -3,7 +3,7 @@ package LeetCode;
 
 public class Bulls_and_Cows {
     public static void main(String[] args) {
-        System.out.println(getHint("1123", "0111"));
+        System.out.println(getHint("1123", "0121"));
     }
 
     public static String getHint(String secret, String guess) {
@@ -23,6 +23,6 @@ public class Bulls_and_Cows {
         for (int i = 0; i < 10; ++i)
             B += Math.min(count1[i], count2[i]);
 
-        return String.valueOf(A) + "A" + String.valueOf(B) + "B";
+        return A + "A" + B + "B";
     }
 }

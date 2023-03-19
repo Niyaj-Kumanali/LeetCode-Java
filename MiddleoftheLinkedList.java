@@ -11,12 +11,12 @@ public class MiddleoftheLinkedList {
     }
 
     public static ListNode middleNode(ListNode head) {
-        ListNode start = head;
-        ListNode end = head;
-        while (end != null && end.next != null) {
-            start = start.next;
-            end = end.next.next;
+        ListNode slow = head;
+        ListNode fast = head;
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
         }
-        return start;
+        return slow;
     }
 }

@@ -1,7 +1,7 @@
 package LeetCode;//https://leetcode.com/problems/defanging-an-ip-address/
 
 
-public class DefanginganIPAddress {
+public class DefangingAnIPAddress {
     public static void main(String[] args)
     {
         String address = "1.1.1.1";

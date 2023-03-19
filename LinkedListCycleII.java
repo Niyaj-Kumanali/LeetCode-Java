@@ -3,27 +3,29 @@ package LeetCode;
 
 public class LinkedListCycleII {
     public static void main(String[] args) {
-        int[] a = {1, 2, 3};
+        ListNode node1 = new ListNode(-4);
+        ListNode node2 = new ListNode(0, node1);
+        ListNode node3 = new ListNode(2, node2);
+        ListNode node4 = new ListNode(3, node3);
+        node1.next = node3;
 
-        ListNode list1 = new ListNode();
-
-        System.out.println(detectCycle(list1));
+        System.out.println(detectCycle(node4).val);
     }
 
     public static ListNode detectCycle(ListNode head) {
-        ListNode start = head;
-        ListNode end = head;
+        ListNode first = head;
+        ListNode second = head;
 
-        while (end != null && end.next != null) {
-            start = start.next;
-            end = end.next.next;
-            if (start == end) {
-                start = head;
-                while (start != end) {
-                    start = start.next;
-                    end = end.next;
+        while (second != null && second.next != null) {
+            first = first.next;
+            second = second.next.next;
+            if (first == second) {
+                first = head;
+                while (first != second) {
+                    first = first.next;
+                    second = second.next;
                 }
-                return start;
+                return first;
             }
         }
 

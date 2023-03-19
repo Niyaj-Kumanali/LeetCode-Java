@@ -9,8 +9,7 @@ public class FindTargetIndicesAfterSortingArray {
     public static void main(String[] args)
     {
         int[] nums = {1,2,2,3,2};
-        int target = 2;
-        System.out.println(targetIndices(nums, target));
+        System.out.println(targetIndices(nums, 2));
     }
 
     static List<Integer> targetIndices(int[] nums, int target)
